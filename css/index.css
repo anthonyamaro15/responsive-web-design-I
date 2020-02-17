@@ -158,17 +158,10 @@ h5 {
 
 /* ----- HEADER ------- */
 .nav-container {
-  /* background-color: rgba(83, 135, 195, 0.2);
-  position: fixed;
-  top: 0;
-  left: 9.5%;
-  right: 9.5%; */
   display: flex;
-  /* flex-wrap: wrap-reverse; */
   justify-content: space-between;
   height: 8vh;
   align-items: center;
-  /* z-index: 10; */
   padding: 0 0.5rem;
 }
 
@@ -176,7 +169,6 @@ h5 {
   width: 50%;
   display: flex;
   justify-content: space-between;
-  /* border: 1px solid blue; */
 }
 
 .nav a {
@@ -206,7 +198,6 @@ header h1 {
   margin-top: 9rem;
   display: flex;
   justify-content: center;
-  /* border: 1px solid red; */
 }
 
 .sub-header {
@@ -456,6 +447,9 @@ address {
   }
 }
 
+/*********************************************/
+/*--------- MEDIA QUERIES FOR 1290PX ------*/
+
 @media (max-width: 1290px) {
   .nav-container {
     flex-wrap: wrap-reverse;
@@ -476,7 +470,10 @@ address {
     display: none;
   }
 }
+/*---- END OF MEDIA QUERIES FOR 1290PX-----*/
 
+/*********************************************/
+/*--------- MEDIA QUERIES FOR 800PX ------*/
 @media (max-width: 800px) {
   body {
     width: 100%;
@@ -559,8 +556,83 @@ address {
     text-align: center;
     margin-bottom: 1.5rem;
   }
+
+  /*---------  SERVICES PAGE EXTRA ---------*/
+
+  .services-logo {
+    height: 15vh;
+    margin: 4rem 0 3rem 0;
+  }
+  .description h1 {
+    font-size: 2rem;
+  }
+
+  .description p {
+    font-size: 1.1rem;
+    line-height: 1.2;
+  }
+  .services-main-container {
+    flex-wrap: wrap;
+  }
+
+  .services-main-container h3 {
+    font-size: 1.2rem;
+  }
+
+  .services-main-container p {
+    font-size: 1.1rem;
+  }
+
+  .shared-classes {
+    width: 100%;
+  }
+
+  .shared-classes button {
+    padding: 0.4rem 2.5rem;
+  }
+
+  .footer-container {
+    flex-wrap: wrap;
+    margin-bottom: 3rem;
+  }
+
+  .side-one {
+    width: 100%;
+    margin-right: 0;
+  }
+  .side-one p {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    line-height: 1.2;
+  }
+
+  .side-one ul {
+    padding-left: 1.9rem;
+  }
+  .side-one ul li {
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+    list-style-type: square;
+    padding-left: 0.5rem;
+  }
+
+  .footer-img {
+    width: 100%;
+    height: 30vh;
+  }
+
+  .copyright {
+    text-align: center;
+    padding-bottom: 1.5rem;
+  }
+
+  /*------END OF SERVICES CONTAINER -------*/
 }
 
+/*------END OF MEDIA QUERIES 800PX -------*/
+
+/*********************************************/
+/*--------- MEDIA QUERIES FOR 500PX ------*/
 @media (max-width: 500px) {
   body {
     padding: 0;
@@ -668,8 +740,21 @@ address {
     text-align: center;
     font-size: 0.8rem;
   }
-}
 
+  /*--------- SERVICES FOOTER ------*/
+  .copyright {
+    font-size: 0.8rem;
+    padding-bottom: 1.5rem;
+  }
+
+  .footer-img {
+    height: 20vh;
+  }
+}
+/*---- END OF MEDIA QUERIES FOR 500PX ------*/
+
+/*********************************************/
+/*--------- MEDIA QUERIES FOR 415PX ------*/
 @media (max-width: 415px) {
   p {
     font-size: 0.7rem;
