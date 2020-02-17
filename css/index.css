@@ -137,12 +137,9 @@ table {
 html,
 body {
   max-width: 2000px;
-  /* width: 90%; */
   margin: 0 auto;
   height: 100vh;
-
   font-family: "Titillium Web", sans-serif;
-  overflow-x: hidden;
 }
 
 h1,
@@ -173,7 +170,6 @@ h5 {
   align-items: center;
   /* z-index: 10; */
   padding: 0 0.5rem;
-  /* border: 1px solid red; */
 }
 
 .nav {
@@ -453,19 +449,22 @@ address {
 /****************************************** */
 /* ----- MEDIA QUERIES -------- */
 
-@media (max-width: 800px) {
+@media (max-width: 2040px) {
   body {
-    width: 100%;
-    padding: 0 1.5rem;
+    width: 90%;
+    margin: 0 auto;
   }
+}
+
+@media (max-width: 1290px) {
   .nav-container {
     flex-wrap: wrap-reverse;
     margin-top: 2rem;
+    padding: 0;
   }
 
   .logo-container {
     text-align: center;
-    /* border: 1px solid blue; */
     width: 60%;
     margin: auto;
   }
@@ -473,9 +472,18 @@ address {
   .nav {
     width: 100%;
   }
+  .img-logo {
+    display: none;
+  }
+}
+
+@media (max-width: 800px) {
+  body {
+    width: 100%;
+    padding: 0 1.5rem;
+  }
 
   .nav a {
-    margin-top: 2rem;
     padding: 0;
     font-size: 1rem;
   }
@@ -555,101 +563,110 @@ address {
 
 @media (max-width: 500px) {
   body {
-    width: 100%;
-    padding: 0 1.5rem;
+    padding: 0;
   }
   .nav-container {
-    flex-wrap: wrap-reverse;
-    margin-top: 2rem;
+    width: 100%;
+    height: 25vh;
+    margin-top: 0;
+  }
+
+  .logo {
+    width: 130px;
   }
 
   .logo-container {
     text-align: center;
-    /* border: 1px solid blue; */
     width: 60%;
     margin: auto;
   }
 
   .nav {
-    width: 100%;
+    flex-direction: column;
+    border-top: 1px solid grey;
   }
 
   .nav a {
-    margin-top: 2rem;
-    padding: 0;
+    border-bottom: 1px solid grey;
+    text-align: center;
     font-size: 1rem;
-  }
-  .img-logo {
-    display: none;
+    padding: 0.8rem 0;
   }
 
   .sub-header-container {
-    margin-top: 4rem;
+    margin-top: 2rem;
   }
-
   .sub-header h1 {
-    font-size: 4rem;
+    font-size: 3.5rem;
+  }
+  .sub-header button {
+    border-width: 1px;
+    font-size: 1rem;
+    padding: 0.3rem 2.3rem;
   }
 
-  .sub-header button {
-    font-size: 1rem;
-    padding: 0.4rem 2.5rem;
+  .parent-main-container {
+    padding: 0 1.5rem;
+  }
+
+  .main-container {
+    margin: 3rem 0;
+    padding: 0;
   }
 
   .main-container h3 {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
   .main-container p {
-    font-size: 1.1rem;
-    letter-spacing: 1px;
+    font-size: 1rem;
+    letter-spacing: 0px;
   }
 
   .top-sections {
-    display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     margin-top: 3rem;
   }
 
   .section-features {
-    width: 47%;
+    width: 100%;
+    margin-bottom: 2rem;
   }
 
   .section-about {
-    width: 47%;
+    width: 100%;
   }
 
   .img-container {
     margin: 2rem 0;
-    height: 13vh;
+    height: 8vh;
   }
 
   .bottom-sections {
-    display: flex;
-    justify-content: space-between;
+    flex-direction: column;
   }
 
-  footer {
-    margin-top: -1.5rem;
+  .bottom-sections section {
+    width: 100%;
+    margin-bottom: 2rem;
   }
 
   footer h3 {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
 
   address {
-    width: 250px;
-    font-size: 1.1rem;
+    width: 200px;
+    font-size: 1rem;
     margin-bottom: 2rem;
   }
 
   .number {
-    display: inline-block;
-    padding: 1.5rem 0;
+    padding: 1rem 0;
   }
 
   .copyright-text {
     text-align: center;
-    margin-bottom: 1.5rem;
+    font-size: 0.8rem;
   }
 }
 
